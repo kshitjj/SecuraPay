@@ -259,3 +259,12 @@ body {
   color: #667e8d;
   margin-top: .5rem;
 }
+
+#video {
+  display: block; /* Ensure the video is displayed */
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1000; /* Make sure it's on top */
+  position: relative; /* Ensure it's not hidden by other elements */
+  background-color: #000; /* Just to ensure the background is not transparent */
+}
