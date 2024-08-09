@@ -266,5 +266,5 @@ body {
   height: auto; /* Maintain aspect ratio */
   z-index: 1000; /* Make sure it's on top */
   position: relative; /* Ensure it's not hidden by other elements */
-   background-color: transparent; /* Just to ensure the background is not transparent */
+  background-color: transparent; /* Just to ensure the background is not transparent */
 }
