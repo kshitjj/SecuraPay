@@ -261,10 +261,11 @@ body {
 }
 
 #video {
-  display: block; /* Ensure the video is displayed */
+ 
+ display: none; /* Ensure the video is displayed */
   width: 100%; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
   z-index: 1000; /* Make sure it's on top */
   position: relative; /* Ensure it's not hidden by other elements */
-  background-color: transparent; /* Just to ensure the background is not transparent */
+  background-color: black;
 }
