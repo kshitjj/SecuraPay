@@ -150,20 +150,27 @@
     <video id="video"></video> <!-- Video element for scanning -->
 
     <script>
-        document.getElementById('scanner_click').addEventListener('click', function() {
-            const video = document.getElementById('video');
-            video.style.display = 'block'; // Show the video element
+  document.getElementById('scanner_click').addEventListener('click', function() {
+    const video = document.getElementById('video');
+    video.style.display = 'block'; // Ensure the video element is visible
 
-            const codeReader = new ZXing.BrowserQRCodeReader();
-            codeReader.decodeFromInputVideoDevice(undefined, 'video').then(result => {
-                console.log(result); // Handle the result here
-                alert('QR Code: ' + result.text); // Example: Show QR code result
-                video.style.display = 'none'; // Hide the video element after scan
-            }).catch(err => {
-                console.error(err);
-                alert('Error: ' + err);
-            });
+    const codeReader = new ZXing.BrowserQRCodeReader();
+
+    codeReader.decodeFromInputVideoDevice(undefined, 'video')
+        .then(result => {
+            console.log(result);
+            alert('QR Code: ' + result.text); // Show QR code result
+            video.style.display = 'none'; // Hide the video element after scan
+        })
+        .catch(err => {
+            console.error(err);
+            alert('Error: ' + err); // Display error for debugging
         });
+
+    // Ensure the video plays
+    video.play();
+});
+
     </script>
 </body>
 </html>
