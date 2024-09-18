@@ -7,9 +7,9 @@ The basic workflow of how the process works is listed the diagram below:
 *insert diagram*
 
 ## TODO
--[ ] refactor the code in any framework so it's easier to work with
--[ ] backend
-    -[ ] first hello world to blockchain
-    -[ ] login and stuff
--[ ] idk add checkbox, this is not it.
+- [ ] refactor the code in any framework so it's easier to work with
+- [ ] backend
+    - [ ] first hello world to blockchain
+    - [ ] login and stuff
+- [ ] idk add checkbox, this is not it.
 
